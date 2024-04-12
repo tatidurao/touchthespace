@@ -1,6 +1,10 @@
 var latitude = -33.344
 var longitude = -53.031
-var endereco
+const beachFlagImg = document.createElement("img");
+
+  beachFlagImg.src ="iss.png";
+  beachFlagImg.width=80
+  beachFlagImg.height=80
 
 /*Quando pressiona o botão */
 $(function () {
@@ -55,11 +59,7 @@ async function initMap(lati,longi) {
     center: position,
     mapId: "DEMO_MAP_ID",
   });
-  const beachFlagImg = document.createElement("img");
-
-  beachFlagImg.src ="iss.png";
-  beachFlagImg.width=80
-  beachFlagImg.height=80
+  
   
   // The marker, positioned at Uluru
   const marker = new AdvancedMarkerView({
