@@ -63,7 +63,7 @@ main textarea {
 }
 
 .img_url{
-    width: 600px;
+    width: 500px;
 }
 #quiz {
     counter-reset: quiz-item;
